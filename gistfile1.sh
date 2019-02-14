@@ -2,6 +2,11 @@
 #./genDb.sh `pwd`
 #export CSCOPE_EDITOR=`which vim`
 
+if [ "$1" = "log" ]; then
+	git log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
+	exit
+fi
+
 CSCOPE_FILE=cscope.out
 if [ -n "$1" ]; then
 	echo "Source code directory: " $1

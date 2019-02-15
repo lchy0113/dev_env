@@ -1,7 +1,7 @@
-'''
+"""
 excute this script under you code's root folder, 
 this will generate the cscoe.files and then excute cscope -bk
-'''
+"""
 
 import os
 

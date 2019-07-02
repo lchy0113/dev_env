@@ -2,7 +2,7 @@
 
 ##########################################################
 # vim configuration Script.
-# 19/05/08
+# 19/07/02
 ##########################################################
 
 echo "*********************************************************"
@@ -21,7 +21,7 @@ mkdir -p ~/.vim/bundle
 echo "*********************************************************"
 echo "* Plugin Manager Download(vundle) "
 echo "*********************************************************"
-git clone git@gitlab.com:RICHGOLD/VIM_Vundle.git ~/.vim/bundle/Vundle.vim
+git clone git@github.com:lchy0113/VIM_Vundle.git ~/.vim/bundle/Vundle.vim
 
 echo "*********************************************************"
 echo " Copy the .vimrc file "

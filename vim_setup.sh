@@ -21,7 +21,7 @@ mkdir -p ~/.vim/bundle
 echo "*********************************************************"
 echo "* Plugin Manager Download(vundle) "
 echo "*********************************************************"
-git clone git@github.com:lchy0113/VIM_Vundle.git ~/.vim/bundle/Vundle.vim
+git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
 
 echo "*********************************************************"
 echo " Copy the .vimrc file "

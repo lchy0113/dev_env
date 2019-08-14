@@ -35,13 +35,16 @@ set t_Co=256         " 색 조정
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
 
-	Plugin 'gmarik/Vundle.vim'
+	Plugin 'vundleVim/Vundle.vim'
 	Plugin 'The-NERD-Tree' 	"계층 별로 파일을 보고 접근할 수 있다.
 	Plugin 'Source-Explorer-srcexpl.vim' 
 	Plugin 'SrcExpl' 		"커서가 지시하는 변수들의 정보를 보여줌
 	Plugin 'taglist.vim' 	"ctags를 사용하여 소스코드 파일에서 함수, 전역 변수 리스트를 확인할 수 있는 강력한 사이드바를 제공
 	Plugin 'AutoComplPop' 	"자동완성 플러긴
 	Plugin 'snipMate' 		"for, while과 같은 예약어를 입력할 경우 snip code를 자동으로 제공해 준다. ~/.vim/snippets 에 제공 기준이 있음.
+	Plugin 'Lokaltog/vim-easymotion'
+	Plugin 'bling/vim-airline'
+	Plugin 'plasticboy/vim-markdown'
 call vundle#end()
 
 
@@ -63,31 +66,8 @@ endif
 
 
 "ctags
-"set tags+=/home/lchy0113/Project/rts/kernel_imx/tags
-set tags+=/home/lchy0113/Project/FALINUX/apsi_imx6sl/kernel/linux-imx6-3.14.52/tags
-"set tags+=/home/lchy0113/Project/rts/bootable/bootloader/uboot-imx/tags
-"set tags+=/home/lchy0113/Project/rts/build_image/kernel_driver/tags
-"set tags+=/home/lchy0113/Project/git_imx6sl/apsi_imx6sl/kernel/build_linux_3.14.52/tags
-"set tags+=/home/lchy0113/Project/git_imx6sl/apsi_imx6sl/bootloader/u-boot_2015_01/tags
-"set tags+=/home/lchy0113/Project/rts/tags
-"set tags+=/home/lchy0113/Project/ODROID/xu4_2/tags
-"set tags+=/home/lchy0113/Project/rts/bootable/bootloader/uboot-imx/tags
-"set tag+=/home/lchy0113/Project/ODROID/bootloader/u-boot_v2012.07/u-boot/tags
-"set tag+=/home/lchy0113/Project/Caribou/source/tags
-"set tag+=/home/lchy0113/Project/Caribou/source/kernel/msm-3.18/tags
-"set tag+=/home/lchy0113/Project/Caribou/temp/Caribou/LA.UM.5.6/LINUX/android/kernel/msm-3.18/tags
+set tags+=/home/lchy0113/development/u-boot/tags
 
 "cscope
-"cs add /home/lchy0113/Project/rts/kernel_imx/cscope.out
-cs add /home/lchy0113/Project/FALINUX/apsi_imx6sl/kernel/linux-imx6-3.14.52/cscope.out
-"cs add /home/lchy0113/Project/rts/bootable/bootloader/uboot-imx/cscope.out
-"cs add /home/lchy0113/Project/rts/build_image/kernel_driver/cscope.out
-"cs add /home/lchy0113/Project/git_imx6sl/apsi_imx6sl/kernel/build_linux_3.14.52/cscope.out
-"cs add /home/lchy0113/Project/git_imx6sl/apsi_imx6sl/bootloader/u-boot_2015_01/cscope.out
-"cs add /home/lchy0113/Project/rts/cscope.out
-"cs add /home/lchy0113/Project/ODROID/xu4_2/cscope.out
-"cs add /home/lchy0113/Project/rts/bootable/bootloader/uboot-imx/cscope.out
-"cs add /home/lchy0113/Project/ODROID/bootloader/u-boot_v2012.07/u-boot/cscope.out
-"cs add /home/lchy0113/Project/Caribou/source/cscope.out
-"cs add /home/lchy0113/Project/Caribou/source/kernel/msm-3.18/cscope.out
-"cs add /home/lchy0113/Project/Caribou/temp/Caribou/LA.UM.5.6/LINUX/android/kernel/msm-3.18/cscope.out
+cs add /home/lchy0113/development/u-boot/cscope.out
+

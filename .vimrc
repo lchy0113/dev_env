@@ -34,7 +34,6 @@ set t_Co=256         " 색 조정
 
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
-
 	Plugin 'vundleVim/Vundle.vim'
 	Plugin 'The-NERD-Tree' 	"계층 별로 파일을 보고 접근할 수 있다.
 	Plugin 'Source-Explorer-srcexpl.vim' 
@@ -42,9 +41,12 @@ call vundle#begin()
 	Plugin 'taglist.vim' 	"ctags를 사용하여 소스코드 파일에서 함수, 전역 변수 리스트를 확인할 수 있는 강력한 사이드바를 제공
 	Plugin 'AutoComplPop' 	"자동완성 플러긴
 	Plugin 'snipMate' 		"for, while과 같은 예약어를 입력할 경우 snip code를 자동으로 제공해 준다. ~/.vim/snippets 에 제공 기준이 있음.
-	Plugin 'Lokaltog/vim-easymotion'
-	Plugin 'bling/vim-airline'
+	Plugin 'Lokaltog/vim-easymotion'	"한 화면에서 커서이동, 현재 보이는 화면에서 커서를 이동할 때 사용한다. 
+	Plugin 'scrooloose/nerdcommenter'	"주석, 코드를 입력할 때 파일의 종류에 따라서 주석을 붙여준다. 
+	Plugin 'bling/vim-airline'	"상태 바, Vim 사용자의 하단 상태바를 변경한다. 
+	Plugin 'majutsushi/tagbar'	"ctags 결과 표시, ctags 로 생성된 결과를 보여준다. 
 	Plugin 'plasticboy/vim-markdown'
+"	Plugin 'Valloric/YouCompleteMe'	"코드 완성 엔진, 
 call vundle#end()
 
 

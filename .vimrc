@@ -46,9 +46,12 @@ call vundle#begin()
 	Plugin 'bling/vim-airline'	"상태 바, Vim 사용자의 하단 상태바를 변경한다. 
 	Plugin 'majutsushi/tagbar'	"ctags 결과 표시, ctags 로 생성된 결과를 보여준다. 
 	Plugin 'plasticboy/vim-markdown'
-"	Plugin 'Valloric/YouCompleteMe'	"코드 완성 엔진, 
+	Plugin 'Valloric/YouCompleteMe'	"코드 완성 엔진, 
+"	Plugin 'SirVer/ultisnips'
 call vundle#end()
-
+" PluginInstall
+" PluginClean
+" PluginList
 
  "ctags macro setting
 if version >= 500 " vim 버전이 5.0 이상일 때만 적용하게 만들 었다.
@@ -66,6 +69,24 @@ endfunc
 nmap ,tj :call Tj()<cr>
 endif
 
+ " YouCompleteMe setting
+let g:ycm_key_list_select_completion = ['<C-n>']
+let g:ycm_key_list_previous_completion=['<C-p>']
+
+let g:ycm_server_python_interpreter = '/usr/local/bin/python3'
+let g:ycm_collect_identifiers_from_comments_and_strings = 1
+let g:ycm_complete_in_strings = 1
+let g:ycm_complete_in_comments = 1
+let g:ycm_min_num_of_chars_for_completion = 1
+let g:ycm_filetype_blacklist = {}
+
+
+" nnoremap g :YcmCompleter GoTo
+" nnoremap gg :YcmCompleter GoToImprecise
+" nnoremap d :YcmCompleter GoToDeclaration
+" nnoremap t :YcmCompleter GetType
+" nnoremap p :YcmCompleter GetParent 
+""""""""""""""""""""""""
 
 "ctags
 set tags+=/home/lchy0113/development/u-boot/tags

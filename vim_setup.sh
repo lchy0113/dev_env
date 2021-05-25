@@ -41,6 +41,15 @@ mkdir -p ~/.vim/plugin/
 cp mark.vim ~/.vim/plugin/
 
 echo "*********************************************************"
+echo " Install Plugin YouCompleteMe "
+echo "*********************************************************"
+sudo apt install build-essential cmake vim-nox python3-dev -y
+"sudo apt install mono-complete golang nodejs default-jdk npm -y
+cd ~/.vim/bundle/YouCompleteMe
+"python3 install.py --all
+python3 ./install.py --clang-completer 
+
+echo "*********************************************************"
 echo " Complete. "
 echo "*********************************************************"
 

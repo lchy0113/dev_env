@@ -53,7 +53,9 @@ call vundle#end()
 " PluginClean
 " PluginList
 
+""""""""""""""""""""""""
  "ctags macro setting
+""""""""""""""""""""""""
 if version >= 500 " vim 버전이 5.0 이상일 때만 적용하게 만들 었다.
 func! Sts() 
 	let st = expand("<cword>") " let을 이용해서 st라는 변수를 생성 한다.  exe를 이용해서 뒤에나온 명령어를 출력 한다. .st를 출력한다.
@@ -69,7 +71,9 @@ endfunc
 nmap ,tj :call Tj()<cr>
 endif
 
+""""""""""""""""""""""""
  " YouCompleteMe setting
+""""""""""""""""""""""""
 let g:ycm_key_list_select_completion = ['<C-n>']
 let g:ycm_key_list_previous_completion=['<C-p>']
 
@@ -86,11 +90,14 @@ let g:ycm_filetype_blacklist = {}
 " nnoremap d :YcmCompleter GoToDeclaration
 " nnoremap t :YcmCompleter GetType
 " nnoremap p :YcmCompleter GetParent 
-""""""""""""""""""""""""
 
-"ctags
+""""""""""""""""""""""""
+ "ctags
+""""""""""""""""""""""""
 set tags+=/home/lchy0113/development/u-boot/tags
 
-"cscope
+""""""""""""""""""""""""
+ "cscope
+""""""""""""""""""""""""
 cs add /home/lchy0113/development/u-boot/cscope.out
 

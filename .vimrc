@@ -68,8 +68,8 @@ call vundle#begin()
 	let g:airline_theme='papercolor'
 	Plugin 'Tagbar'
 	nmap <F8> :TagbarToggle<CR>
-	Plugin 'togglenumber'
-	nmap <F5> :ToggleNumber<CR>
+"	Plugin 'togglenumber'
+"	nmap <F5> :ToggleNumber<CR>
 	Plugin 'majutsushi/tagbar'	"ctags 결과 표시, ctags 로 생성된 결과를 보여준다. 
 	Plugin 'plasticboy/vim-markdown'
 	Plugin 'airblade/vim-gitgutter' " 코드 변경 내역을 한눈에

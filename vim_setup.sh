@@ -26,7 +26,7 @@ git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
 echo "*********************************************************"
 echo " Copy the .vimrc file "
 echo "*********************************************************"
-cp .vimrc ~/.vimrc
+ln -s ./vimrc ~/.vimrc
 
 
 echo "*********************************************************"

@@ -27,7 +27,7 @@ echo "*********************************************************"
 echo " Copy the .vimrc file "
 echo "*********************************************************"
 ln -s ./vimrc ~/.vimrc
-
+ln -sr ./colors ~/.vim/colors
 
 echo "*********************************************************"
 echo " Input command : BundleInstall "
@@ -48,6 +48,7 @@ sudo apt install build-essential cmake vim-nox python3-dev -y
 cd ~/.vim/bundle/YouCompleteMe
 # python3 install.py --all
 python3 ./install.py --clang-completer 
+cp ~/.vim/bundle/YouCompleteMe/.ycm_extra_conf.py ~/.vim/
 
 echo "*********************************************************"
 echo " Complete. "

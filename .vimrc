@@ -22,7 +22,7 @@ set ignorecase       " 검색시 대소문자 무시, set ic 도 가능
 set tabstop=4        " 탭을 4칸으로
 set lbr
 set incsearch        " 키워드 입력시 점진적 검색
-set cursorline       " 편집 위치에 커서 라인 설정
+"set cursorline       " 편집 위치에 커서 라인 설정
 set laststatus=2     " 상태바 표시를 항상한다
 syntax on 			 "  구문강조 사용
 filetype indent on   " 파일 종류에 따른 구문강조
@@ -124,10 +124,8 @@ let g:ycm_filetype_blacklist = {}
  "ctags
 """"""""""""""""""""""""
 "set tags+=/home/lchy0113/development/u-boot/tags
-set tags+=/home/lchy0113/Develop/Telechips/tcc8985/kernel/tags
 
 """"""""""""""""""""""""
  "cscope
 """"""""""""""""""""""""
 "cs add /home/lchy0113/development/u-boot/cscope.out
-cs add /home/lchy0113/Develop/Telechips/tcc8985/kernel/cscope.out

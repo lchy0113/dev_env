@@ -32,12 +32,20 @@ set autoread		 " 현재 사용하고 있는 파일이 외부에서 수정된 경
 set autowrite		 " 다른 파일을 읽게 되는 경우 현재 파일을 자동으로 저장하기. 현재 파일을 저장하지 않으면 ":e" 등으로 다른 파일을 열 수 없음.
 highlight Comment term=bold cterm=bold ctermfg=4 " 코멘트 하이라이트
 "set mouse=a          " vim에서 마우스 사용
-colorscheme sublimemonokai "solarized, mango, sublimemonokai
+"colorscheme sublimemonokai "solarized, mango, sublimemonokai
+colorscheme molokai 
 set background=dark  " 하이라이팅 lihgt / dark
 "colorscheme evening  "  vi 색상 테마 설정
 set t_Co=256         " 색 조정
 set showmatch		 " 현재 커서가 놓여진 괄호의 짝을 표시하기
 set sc 				 " 완성중인 명령을 표시
+
+""""""""""""""""""""""""
+ " Coding
+""""""""""""""""""""""""
+set title			 " title 표시
+set nocompatible
+
 
 """"""""""""""""""""""""
  " vim setting

@@ -74,6 +74,7 @@ call vundle#begin()
 	let g:airline#extensions#tabline#left_sep = ' ' 
 	let g:airline#extensions#tabline#left_alt_sep = '|' 
 	let g:airline_theme='papercolor'
+	let g:airline#extensions#tabline#fnamemod = ':t'
 	Plugin 'Tagbar'
 	nmap <F8> :TagbarToggle<CR>
 "	Plugin 'togglenumber'

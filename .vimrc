@@ -85,6 +85,8 @@ call vundle#begin()
 	Plugin 'Valloric/YouCompleteMe'	"코드 완성 엔진, 
 	Plugin 'scrooloose/syntastic' " 코드 문법 체크
 "	Plugin 'SirVer/ultisnips'
+"	Plugin 'Raimondi/delimitMate' "Auto create {}
+	Plugin 'terryma/vim-smooth-scroll'
 call vundle#end()
 " PluginInstall
 " PluginClean
@@ -129,6 +131,14 @@ let g:ycm_filetype_blacklist = {}
 " nnoremap t :YcmCompleter GetType
 " nnoremap p :YcmCompleter GetParent 
 
+"" delimitMate
+"let delimitMate_expand_cr=1
+
+" vim-smooth-scroll
+noremap <silent> <c-b> :call smooth_scroll#up(&scroll*2, 10, 5)<CR>
+noremap <silent> <c-f> :call smooth_scroll#down(&scroll*2, 10, 5)<CR>
+noremap <silent> <c-u> :call smooth_scroll#up(&scroll, 10, 3)<CR>
+noremap <silent> <c-d> :call smooth_scroll#down(&scroll, 10, 3)<CR>
 """"""""""""""""""""""""
  "ctags
 """"""""""""""""""""""""

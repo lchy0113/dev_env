@@ -117,7 +117,7 @@ endif
 let g:ycm_key_list_select_completion = ['<C-n>']
 let g:ycm_key_list_previous_completion=['<C-p>']
 
-let g:ycm_server_python_interpreter = '/usr/local/bin/python3'
+let g:ycm_server_python_interpreter = '/bin/python3'
 let g:ycm_collect_identifiers_from_comments_and_strings = 1
 let g:ycm_complete_in_strings = 1
 let g:ycm_complete_in_comments = 1
@@ -142,9 +142,8 @@ noremap <silent> <c-d> :call smooth_scroll#down(&scroll, 10, 3)<CR>
 """"""""""""""""""""""""
  "ctags
 """"""""""""""""""""""""
-"set tags+=/home/lchy0113/development/u-boot/tags
-
+"set tags+=`pwd`/tags
 """"""""""""""""""""""""
  "cscope
 """"""""""""""""""""""""
-"cs add /home/lchy0113/development/u-boot/cscope.out
+"cs add `pwd`/cscope.out

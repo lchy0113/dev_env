@@ -64,7 +64,7 @@ call vundle#begin()
 	Plugin 'SrcExpl' 		"커서가 지시하는 변수들의 정보를 보여줌
 	Plugin 'taglist.vim' 	"ctags를 사용하여 소스코드 파일에서 함수, 전역 변수 리스트를 확인할 수 있는 강력한 사이드바를 제공
 	Plugin 'AutoComplPop' 	"자동완성 플러긴
-	Plugin 'snipMate' 		"for, while과 같은 예약어를 입력할 경우 snip code를 자동으로 제공해 준다. ~/.vim/snippets 에 제공 기준이 있음.
+"	Plugin 'snipMate' 		"for, while과 같은 예약어를 입력할 경우 snip code를 자동으로 제공해 준다. ~/.vim/snippets 에 제공 기준이 있음.
 	Plugin 'Lokaltog/vim-easymotion'	"한 화면에서 커서이동, 현재 보이는 화면에서 커서를 이동할 때 사용한다. 
 	Plugin 'scrooloose/nerdcommenter'	"주석, 코드를 입력할 때 파일의 종류에 따라서 주석을 붙여준다. 
 "	Plugin 'bling/vim-airline'	"상태 바, Vim 사용자의 하단 상태바를 변경한다. 
@@ -84,7 +84,8 @@ call vundle#begin()
 	Plugin 'airblade/vim-gitgutter' " 코드 변경 내역을 한눈에
 	Plugin 'Valloric/YouCompleteMe'	"코드 완성 엔진, 
 	Plugin 'scrooloose/syntastic' " 코드 문법 체크
-"	Plugin 'SirVer/ultisnips'
+	Plugin 'SirVer/ultisnips'
+	Plugin 'honza/vim-snippets'
 "	Plugin 'Raimondi/delimitMate' "Auto create {}
 	Plugin 'terryma/vim-smooth-scroll'
 call vundle#end()
@@ -139,6 +140,20 @@ noremap <silent> <c-b> :call smooth_scroll#up(&scroll*2, 10, 5)<CR>
 noremap <silent> <c-f> :call smooth_scroll#down(&scroll*2, 10, 5)<CR>
 noremap <silent> <c-u> :call smooth_scroll#up(&scroll, 10, 3)<CR>
 noremap <silent> <c-d> :call smooth_scroll#down(&scroll, 10, 3)<CR>
+
+" for vim-airline
+let g:airline#extensions#tabline#enabled = 1 " turn on buffer list
+let g:airline#extensions#tabline#left_sep = ' ' 
+let g:airline#extensions#tabline#left_alt_sep = '|' 
+let g:airline_theme='papercolor'
+let g:airline#extensions#tabline#fnamemod = ':t'
+set laststatus=2 " turn on bottom bar
+
+" UltiSnips
+let g:UltiSnipsExpandTrigger="<tab>"
+let g:UltiSnipsJumpForwardTrigger="<tab>"
+let g:UltiSnipsJumpBackwardTrigger="<s-tab>"
+let g:UltiSnipsEditSplit="vertical"
 """"""""""""""""""""""""
  "ctags
 """"""""""""""""""""""""

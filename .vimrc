@@ -39,6 +39,7 @@ set background=dark  " 하이라이팅 lihgt / dark
 set t_Co=256         " 색 조정
 set showmatch		 " 현재 커서가 놓여진 괄호의 짝을 표시하기
 set sc 				 " 완성중인 명령을 표시
+set colorcolumn=95
 
 """"""""""""""""""""""""
  " Coding

@@ -88,6 +88,7 @@ call vundle#begin()
 	Plugin 'SirVer/ultisnips'
 	Plugin 'honza/vim-snippets'
 "	Plugin 'Raimondi/delimitMate' "Auto create {}
+	Plugin 'terryma/vim-multiple-cursors'
 	Plugin 'terryma/vim-smooth-scroll'
 call vundle#end()
 " PluginInstall
@@ -136,6 +137,14 @@ let g:ycm_filetype_blacklist = {}
 "" delimitMate
 "let delimitMate_expand_cr=1
 
+" vim-multiple-cursor
+let g:multi_cursor_use_default_mapping=0
+" Default mapping
+let g:multi_cursor_next_key='<C-n>' " Ctrl+n select next word, continue
+let g:multi_cursor_prev_key='<C-p>' " Ctrn+p select prevlous word, continue
+let g:multi_cursor_skip_key='<C-x>' " Ctrl+x skip currenct word
+let g:multi_cursor_quit_key='<Esc>'	"
+
 " vim-smooth-scroll
 noremap <silent> <c-b> :call smooth_scroll#up(&scroll*2, 10, 5)<CR>
 noremap <silent> <c-f> :call smooth_scroll#down(&scroll*2, 10, 5)<CR>
@@ -146,7 +155,8 @@ noremap <silent> <c-d> :call smooth_scroll#down(&scroll, 10, 3)<CR>
 let g:airline#extensions#tabline#enabled = 1 " turn on buffer list
 let g:airline#extensions#tabline#left_sep = ' ' 
 let g:airline#extensions#tabline#left_alt_sep = '|' 
-let g:airline_theme='papercolor'
+"let g:airline_theme='papercolor'
+let g:airline_theme='papercolor'	"other: papercolor
 let g:airline#extensions#tabline#fnamemod = ':t'
 set laststatus=2 " turn on bottom bar
 

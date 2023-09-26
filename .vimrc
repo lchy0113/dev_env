@@ -53,6 +53,26 @@ set nocompatible
 """"""""""""""""""""""""
 let &showbreak = '+++ '		" 한 줄이 너무 길어 여러 줄로 표현될 때, 아래쪽 줄들이 윗쪽 줄에서 이어짐을 설정한 기호를 사용해 가장 왼쪽에 표시
 
+""""""""""""""""""""""""
+ " markdown2ctags
+""""""""""""""""""""""""
+" markdown2ctags pwd
+let markdown2ctags_dir = '/home/lchy0113/Private/github/dev_env/markdown2ctags/markdown2ctags.py'
+" Add support for markdown files in tagbar.
+let g:tagbar_type_markdown = {
+    \ 'ctagstype': 'markdown',
+    \ 'ctagsbin' : markdown2ctags_dir,
+    \ 'ctagsargs' : '-f - --sort=yes --sro=»',
+    \ 'kinds' : [
+        \ 's:sections',
+        \ 'i:images'
+    \ ],
+    \ 'sro' : '»',
+    \ 'kind2scope' : {
+        \ 's' : 'section',
+    \ },
+    \ 'sort': 0,
+\ }
 
 
 set rtp+=~/.vim/bundle/Vundle.vim
